@@ -10,5 +10,14 @@ apply plugin: 'jetty'
     }
 
 jettyRun {
-        httpPort = 7979
+        httpPort = 7878
+		stopKey = 'turbineStop'
+        stopPort = 7777
 }
+
+jettyStop {
+		stopKey = 'turbineStop'
+        stopPort = 7777
+}
+
+
